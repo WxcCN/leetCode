@@ -8,7 +8,7 @@ import java.util.HashMap;
  * @auther Nova wangxingchen
  * @create 2018/7/25
  */
-public class TestUtil2 {
+public class TestUtil4 {
     final static char[] digits = {
             '0', '1', '2', '3', '4', '5',
             '6', '7', '8', '9', 'a', 'b',
@@ -44,15 +44,10 @@ public class TestUtil2 {
 
 
     public static void main(String[] args) {
-        int[] a = {1,2};
-        String s1 = "a";
-        String s2 = "b";
-        String[] ss = {s1,s2};
-        int i1 = 1;
 
-        System.out.println(a instanceof Object);
-        System.out.println(ss instanceof Object);
-//        System.out.println(i1 instanceof Object);
+        String s1 = "hello";
+        String s2 = "he"+ new String("llo");
+        System.out.println(s1 == s2);
 
 
     }

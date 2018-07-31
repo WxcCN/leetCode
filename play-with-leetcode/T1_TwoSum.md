@@ -68,3 +68,28 @@ return [0, 1].
 我的解法很麻烦，由于要维护桶多做了很多开销。
 其实这个所谓的桶可以用hashmap 来替代。
 
+```
+public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> hashMap = new HashMap();
+        //初始化map
+        for (int i = 0; i < nums.length; i++) {
+            //key为数组值， value为下标
+            hashMap.put(nums[i],i);
+        }
+
+        //求解
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (hashMap.containsKey(complement) && hashMap.get(complement) != i){
+               return new int[]{i,hashMap.get(target-nums[i])};
+
+           }
+        }
+        throw new IllegalArgumentException("No two sum solution");
+
+    }
+```
+
+这次的耗时提升到了 Runtime: 5 ms
+
+### 调优VV2：
