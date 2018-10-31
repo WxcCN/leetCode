@@ -10,8 +10,9 @@ import java.util.HashMap;
  */
 public class T1_TwoSumV1 {
     public static void main(String[] args) {
-        int nums[] = {2, 5, 5, 11};
-        int target = 10;
+//        int nums[] = {2, 5, 5, 11};
+        int nums[] = {-1,0,1,2, 4097, 8193};
+        int target = 8194;
         T1_TwoSumV1 t1TwoSum = new T1_TwoSumV1();
         int[] ints = t1TwoSum.twoSum(nums, target);
         System.out.println(ints[0] + " " + ints[1]);
