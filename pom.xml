@@ -6,6 +6,7 @@
 
     <groupId>com.nova.learn</groupId>
     <artifactId>leetcode</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -19,6 +20,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>datastructure</module>
+    </modules>
 
 
 </project>
