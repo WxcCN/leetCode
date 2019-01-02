@@ -59,7 +59,7 @@ public class T23_MergeKSortedListsV2 {
         return ori.next;
     }
 
-    static void soutList(ListNode listNode) {
+    public static void soutList(ListNode listNode) {
         while (listNode != null) {
             System.out.println(listNode.val);
             listNode = listNode.next;
