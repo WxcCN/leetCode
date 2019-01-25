@@ -15,6 +15,16 @@ public class MinHeap {
     int length;
     int[] heap;
 
+    public static void main(String[] args) {
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue();
+        MinHeap minHeap = new MinHeap();
+        minHeap.insert(3);
+        minHeap.insert(4);
+        minHeap.insert(2);
+        minHeap.insert(6);
+
+
+    }
     MinHeap() {
         length = default_lenth;
         heap = new int[length];
@@ -60,16 +70,7 @@ public class MinHeap {
 
 
 
-    public static void main(String[] args) {
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue();
-        MinHeap minHeap = new MinHeap();
-        minHeap.insert(3);
-        minHeap.insert(4);
-        minHeap.insert(2);
-        minHeap.insert(6);
 
-
-    }
 
 
 }

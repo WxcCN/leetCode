@@ -14,7 +14,7 @@ public class T678_ValidParenthesisString {
     }
 
     public boolean checkValidString(String s) {
-        if ("".equals(s)||null==s)return ;
+        if ("".equals(s)||null==s)return true;
         int leftstack = 0;
         int startstack = 0;
         char[] chars = s.toCharArray();

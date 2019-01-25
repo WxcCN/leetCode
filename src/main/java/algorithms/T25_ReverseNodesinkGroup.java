@@ -54,7 +54,7 @@ public class T25_ReverseNodesinkGroup {
         }
 
         if (i == k) {
-            pre.next = p;
+            pre.next = phaiy;
         }else {
             pre.next = lnArray[0];
         }

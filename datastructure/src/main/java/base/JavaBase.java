@@ -14,5 +14,8 @@ public class JavaBase {
         char c1 = b.charAt(2);
         System.out.println(c);
         System.out.println(c1);
+
+        ThreadLocal threadLocal = new ThreadLocal;
+
     }
 }

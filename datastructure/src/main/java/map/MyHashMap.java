@@ -2,6 +2,8 @@ package map;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author Nova wangxingchen
@@ -22,6 +24,11 @@ public class MyHashMap {
         System.out.println(format32(i));
 
         hm.put(1, 1);
+//        ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap;
+//        ArrayBlockingQueue arrayBlockingQueue = new ArrayBlockingQueue;
+
+
+        System.out.println(format32(2333));
 
 
     }
